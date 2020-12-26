@@ -1,0 +1,141 @@
+@import 'blocks/fonts.css';
+:root {
+	--red: rgb(215, 40, 21); 
+	--red2: rgb(209, 21, 17); 
+	--gray: rgb(25, 25, 25);
+	--viol: rgb(82, 50, 245);
+	--green: rgb(32, 169, 47);
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	background-color: black;
+}
+* {transition: 0.2s ease-in-out; font-family: 'Montserrat', sans-serif;}
+button:focus {outline: none;}
+
+::-webkit-scrollbar {background: transparent; width: 8px;}
+::-webkit-scrollbar-thumb {background: rgba(255, 255, 255, 0.2); border-radius: 0px;}
+::-webkit-scrollbar-track-piece {background: transparent;}
+
+.main-block {
+	border: 1px solid transparent;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 30px;
+}
+
+#update-btn {
+	background: linear-gradient(120deg, rgba(209, 21, 17, 0.8) 0%, rgba(82, 50, 245, 0.8) 100%);
+	border: none;
+	border-radius: 7px;
+	color: white;
+	width: 170px;
+	text-align: center;
+	padding: 4px;
+	letter-spacing: 2px;
+	font-size: 18pt;
+	transform: translateY(0px);
+	transition: 0.1s ease-in-out;
+}
+#update-btn div {
+	background-color: black;
+	border-radius: 6px;
+	padding: 8px;
+}
+#update-btn:active {transform: translateY(8px);}
+#update-btn:hover div {background-color: transparent;}
+
+.btc-coin-block {background: black; padding: 8px;}
+.btc-coin path {fill: white;}
+.btc-coin rect {fill: transparent;}
+.btc-coin:hover rect {fill: white;}
+
+.btc-rate-block {
+	border: 2px solid var(--red2);
+	background-color: var(--gray);
+	border-radius: 8px;
+	color: white;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.btc-rate-block > div {
+	padding: 12px;
+	font-size: 20pt;
+	background-color: transparent;
+	border-radius: 3px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.btc-rate-block > div:hover {background-color: var(--red);}
+.btc-rate-block > div > div:nth-of-type(1) {letter-spacing: 2px;flex-grow: 1;}
+.btc-rate-block > div > div:nth-of-type(2) {letter-spacing: 2px;}
+
+.eth-coin rect {fill: transparent;}
+.eth-coin path {fill: white;}
+.eth-coin:hover rect {fill: white;}
+
+.eth-rate-block {
+	border: 2px solid var(--viol);
+	background-color: var(--gray);
+	border-radius: 8px;
+	color: white;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.eth-rate-block > div {
+	padding: 12px;
+	font-size: 20pt;
+	background-color: transparent;
+	border-radius: 3px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.eth-rate-block > div:hover {background-color: var(--viol);}
+.eth-rate-block > div > div:nth-of-type(1) {letter-spacing: 2px;flex-grow: 1;}
+.eth-rate-block > div > div:nth-of-type(2) {letter-spacing: 2px;}
+
+
+.ltc-coin rect {fill: transparent;}
+.ltc-coin path {fill: white;}
+.ltc-coin:hover rect {fill: white;}
+
+.ltc-rate-block {
+	border: 2px solid var(--green);
+	background-color: var(--gray);
+	border-radius: 8px;
+	color: white;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.ltc-rate-block > div {
+	padding: 12px;
+	font-size: 20pt;
+	background-color: transparent;
+	border-radius: 3px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.ltc-rate-block > div:hover {background-color: var(--green);}
+.ltc-rate-block > div > div:nth-of-type(1) {letter-spacing: 2px;flex-grow: 1;}
+.ltc-rate-block > div > div:nth-of-type(2) {letter-spacing: 2px;}
+
